@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "outliner",
+  "version": "${version}",
+  "name": "Outliner",
+  "description": "It makes game display outline on adventure mode.",
+  "authors": [
+    "R2turnTrue"
+  ],
+  "contact": {
+    "website": "https://github.com/R2turnTrue/outliner",
+    "repo": "https://github.com/R2turnTrue/outliner"
+  },
+  "license": "MIT",
+  "icon": "assets/outliner/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "xyz.r2turntrue.outliner.client.OutlinerClient"
+    ],
+    "main": [
+      "xyz.r2turntrue.outliner.Outliner"
+    ]
+  },
+  "mixins": [
+    "outliner.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
